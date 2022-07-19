@@ -4,9 +4,6 @@ from Utilities import *
 
 rend = None
 
-
-
-
 def glinit():
     pass
 
