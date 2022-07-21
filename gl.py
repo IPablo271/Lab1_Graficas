@@ -65,11 +65,14 @@ def glVertex(x, y):
 
 
 def glColor(r, g, b):
-    r = round(r * 255)
-    g = round(g * 255)
-    b = round(b * 255)
-    rend.current_color = color(r,g,b)
-
+    if x >=0 <= 1 and y >= 0 <= 1:
+        global rend
+        r = round(r * 255)
+        g = round(g * 255)
+        b = round(b * 255)
+        rend.current_color = color(r,g,b)
+    else:
+        print("No se puede procesar el dato")
 
 
 def glFinish():
